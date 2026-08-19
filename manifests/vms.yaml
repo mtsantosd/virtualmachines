@@ -19,7 +19,7 @@ spec:
           resources:
             requests:
               storage: 10Gi
-          storageClassName: local-storage
+          storageClassName: azure-disk
   instancetype:
     name: u1.small
   preference:
