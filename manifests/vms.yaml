@@ -25,7 +25,7 @@ spec:
   preference:
     name: fedora
   runStrategy: Always
-    template:
+  template:
     metadata:
       labels:
         network.kubevirt.io/headlessService: headless
@@ -33,7 +33,10 @@ spec:
       domain:
         devices:
           autoattachPodInterface: false
-          disks: []
+          disks:
+            - disk:
+                bus: virtio
+              name: rootdisk
           interfaces:
             - masquerade: {}
               name: default
