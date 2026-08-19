@@ -36,12 +36,12 @@ spec:
           disks: []
           interfaces:
             - masquerade: {}
-            name: default
+              name: default
       networks:
         - name: default
-        pod: {}
+          pod: {}
       subdomain: headless
       volumes:
         - dataVolume:
-        name: fedora
-        name: rootdisk
+            name: fedora
+          name: rootdisk
