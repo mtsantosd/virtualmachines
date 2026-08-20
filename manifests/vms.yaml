@@ -21,7 +21,7 @@ spec:
               storage: 30Gi
           storageClassName: azure-disk
   instancetype:
-    name: u1.nano
+    name: u1.small
   preference:
     name: fedora
   runStrategy: Always
